@@ -11,6 +11,7 @@ class Config
     protected $default_bucket    = '';
     protected $default_location  = '';
     protected $protocol          = 'https';
+    protected $zone              = '';
 
     public function __construct($access_key_id = '', $secret_access_key = '', array $options = [])
     {
@@ -28,6 +29,9 @@ class Config
         }
         if (array_key_exists('protocol', $options)) {
             $this->protocol = $options['protocol'];
+        }
+        if (array_key_exists('zone', $options)) {
+            $this->zone = $options['zone'];
         }
     }
 
@@ -54,5 +58,10 @@ class Config
     public function getProtocol()
     {
         return $this->protocol;
+    }
+
+    public function getZone()
+    {
+        return $this->zone;
     }
 }

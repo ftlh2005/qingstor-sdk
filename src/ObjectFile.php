@@ -6,6 +6,7 @@ class ObjectFile
 {
     private $bucket;
     private $key;
+    protected $errorMsg;
 
     public function __construct(Bucket $bucket, $key)
     {

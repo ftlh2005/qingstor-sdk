@@ -6,6 +6,7 @@ class Service
 {
     private $client;
     private $config;
+    protected $errorMsg;
 
     public function __construct(Config $config)
     {

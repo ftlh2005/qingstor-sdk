@@ -7,6 +7,7 @@ class Bucket
     private $service;
     private $name;
     private $zone;
+    protected $errorMsg;
 
     public function __construct(Service $service, $name, $zone)
     {
