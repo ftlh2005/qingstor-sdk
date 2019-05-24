@@ -9,7 +9,7 @@
             "email": "ftlh2005@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "BL\\QingStor\\": "src/",
